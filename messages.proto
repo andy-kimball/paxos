@@ -1,0 +1,8 @@
+syntax = "proto2";
+package paxos;
+
+import weak "gogoproto/gogo.proto";
+
+message TestMessage {
+    optional string text = 1 [(gogoproto.nullable) = false];
+}
